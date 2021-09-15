@@ -1,5 +1,6 @@
-
+"""Reprezentacja listy kart."""
 class Karty():
+
     def __init__(self):
         self.lista_kart = self.__uzupelnij_liste()
 
@@ -13,9 +14,9 @@ class Karty():
         return lista_kart
 
 
-
+"""Reprezentacja jednej karty. Zawiera kolor i wartość."""
 class Karta():
+
     def __init__(self, kolor, wartosc):
         self.kolor = kolor
         self.wartosc = wartosc
-a = Karty()
