@@ -1,22 +1,20 @@
-"""Reprezentacja listy kart."""
-class Karty():
-
-    def __init__(self):
-        self.lista_kart = self.__uzupelnij_liste()
-
-    @staticmethod
-    def __uzupelnij_liste():
-        kolory = ["Pik", "Trefl", "Kier", "Karo"]
-        lista_kart = []
-        for kolor in kolory:
-            for i in range(1, 14):
-                lista_kart.append(Karta(kolor, i))
-        return lista_kart
-
-
-"""Reprezentacja jednej karty. Zawiera kolor i wartość."""
 class Karta():
 
-    def __init__(self, kolor, wartosc):
-        self.kolor = kolor
-        self.wartosc = wartosc
+    def __init__(self):
+        self.__kolor = 0
+        self.__wartosc = 0
+
+    def setKolor(self, kolor):
+        self.__kolor = kolor
+
+    def getKolor(self):
+        return self.__kolor
+
+    def setWartosc(self, wartosc):
+        self.__wartosc = wartosc
+
+    def getWartosc(self):
+        return self.__wartosc
+
+    def __str__(self):
+        return """Reprezentacja jednej karty. Zawiera kolor i wartość."""
