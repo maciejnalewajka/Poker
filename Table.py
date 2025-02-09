@@ -5,16 +5,20 @@
     Copyright © 2024 Maciej Nalewajka. All rights reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------"""
 
-class Talia():
+class Table():
 
     def __init__(self):
-        self.__talia = []
+        self.__players = []
+        self.__deckOfCards = []
+        self.__moneyInTable = 0
 
-    def setTalia(self, talia):
-        self.__talia = talia
+    def addPlayer(self, newPlayer):
+        "Add new player"
+        self.__players.append(newPlayer)
 
-    def getTalia(self):
-        return self.__talia
+    def getPlayers(self):
+        "Get poker players"
+        return self.__players
 
     def __str__(self):
-        return """Reprezentacja talii kart"""
+        return """Poker Table"""

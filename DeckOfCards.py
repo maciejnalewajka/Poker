@@ -5,18 +5,18 @@
     Copyright © 2024 Maciej Nalewajka. All rights reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------"""
 
-class Stol():
+class DeckOfCards():
 
     def __init__(self):
-        self.__gracze = []
-        self.__talia = []
-        self.__pula = 0
+        self.__deckOfCards = []
 
-    def dodajGracza(self, nowyGracz):
-        self.__gracze.append(nowyGracz)
+    def setDeckOfCards(self, deckOfCards):
+        "Set deck of cards"
+        self.__deckOfCards = deckOfCards
 
-    def getGracze(self):
-        return self.__gracze
+    def getDeckOfCards(self):
+        "Get deck of cards"
+        return self.__deckOfCards
 
     def __str__(self):
-        return """Reprezentacja stółu do pokera"""
+        return """Deck of cards"""
